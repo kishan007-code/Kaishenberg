@@ -129,6 +129,9 @@ h1 {
     border-bottom: 1px solid #029500;
     backdrop-filter: blur(20px);
     overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* Keep this row for desktop */
 }
 
 .site-header::before {
@@ -141,18 +144,17 @@ h1 {
     z-index: -1;
     background: linear-gradient(to right, rgba(64, 181, 254, 0.8), rgba(0, 191, 255, 0.8)), url('Image/kbergwhite.png') center center / cover no-repeat;
     opacity: 0.65;
-    /* 👈 Your 80% transparent background */
+    /* 80% transparent background */
 }
 
 .header-left {
     font-family: 'Hitchcut', serif;
     font-size: 2.0em;
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -164,6 +166,7 @@ h1 {
 .header-right {
     display: flex;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 .nav-item {
@@ -186,16 +189,56 @@ h1 {
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
-        max-width: 100%;
+    }
+    .card-body {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+    .section-logo {
+        width: 80%;
+        max-width: 180px;
+        margin: 15px auto 0;
     }
     .buttons a,
     .button a {
-        padding: 8px 12px;
+        padding: 8px 14px;
         font-size: 14px;
+        margin: 6px 4px;
+        display: inline-block;
     }
     .site-header {
-        font-size: 1.2em;
+        flex-direction: column;
+        align-items: center;
         padding: 15px;
+        height: auto;
+        text-align: center;
+    }
+    .header-left {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+    .header-right {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .nav-item {
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-item:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #fff;
     }
 }
 
