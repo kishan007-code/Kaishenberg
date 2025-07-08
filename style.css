@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Hitchcut';
+    src: url('fonts/Hitchcut_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norwester';
+    src: url('fonts/Norwester.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anaktoria';
+    src: url('fonts/Anaktoria.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.intro-text {
+    font-family: 'Anaktoria', serif;
+    font-size: 1.1em;
+    text-align: center;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pdf-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pdf-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-item h3 {
+    margin: 0 0 10px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.section-logo {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.buttons a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    background: #e0e5ec;
+    color: #333;
+    box-shadow: 5px 5px 10px #8397df, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.buttons a:hover {
+    background: #4583e6;
+    box-shadow: inset 2px 2px 5px #bec4cb, inset -2px -2px 5px #f0f5fa;
+}
+
+.button a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    background: #ff93a5;
+    color: #333;
+    box-shadow: 5px 5px 10px #040a0b, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.button a:hover {
+    background: #efc25a;
+    box-shadow: inset 2px 2px 5px #3e4b5b, inset -2px -2px 5px #f0f5fa;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 214, 211, 0.2);
+    border-bottom: 1px solid #029500;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(64, 181, 254, 0.8), rgba(0, 191, 255, 0.8)), url('Image/kbergwhite.png') center center / cover no-repeat;
+    opacity: 0.65;
+    /* 👈 Your 80% transparent background */
+}
+
+.header-left {
+    font-family: 'Hitchcut', serif;
+    font-size: 2.0em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header-left:hover {
+    color: #29b000;
+    text-shadow: 0 0 5px rgba(0, 255, 200, 0.6), 0 0 10px rgba(0, 255, 200, 0.3);
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    font-family: 'Norwester', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    color: #ff0099;
+    text-shadow: 0 0 5px rgba(0, 255, 200, 0.6), 0 0 10px rgba(0, 255, 200, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .buttons a,
+    .button a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .site-header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+.site-title {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+.site-footer {
+    margin-top: 50px;
+    padding: 20px 10px;
+    background: #f9f9f9;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95em;
+    color: #555;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 12px;
+}
+
+.social-links a {
+    margin: 0 12px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.footer-line {
+    margin: 6px 0;
+}
+
+.disclaimer {
+    font-style: italic;
+    color: #666;
+}
+
+.copyright {
+    font-weight: 600;
+    color: #333;
+}
