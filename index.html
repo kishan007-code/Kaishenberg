@@ -11,123 +11,129 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'G-X01C6129D4');
     </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FWU | Practicals & Resources</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            padding: 20px;
-            max-width: 700px;
-            margin: auto;
-        }
-        
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        
-        .pdf-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .pdf-item {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pdf-item h3 {
-            margin: 0 0 10px;
-        }
-        
-        .buttons a {
-            text-decoration: none;
-            margin-right: 10px;
-            padding: 10px 16px;
-            border-radius: 10px;
-            font-weight: bold;
-            border: none;
-            background: #e0e5ec;
-            color: #333;
-            box-shadow: 5px 5px 10px #8397df, -5px -5px 10px #ffffff;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        
-        .buttons a:hover {
-            background: #4583e6;
-            box-shadow: inset 2px 2px 5px #bec4cb, inset -2px -2px 5px #f0f5fa;
-        }
-        
-        .button a {
-            text-decoration: none;
-            margin-right: 10px;
-            padding: 10px 16px;
-            border-radius: 10px;
-            font-weight: bold;
-            border: none;
-            background: #ff93a5;
-            color: #333;
-            box-shadow: 5px 5px 10px #040a0b, -5px -5px 10px #ffffff;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        
-        .button a:hover {
-            background: #efc25a;
-            box-shadow: inset 2px 2px 5px #3e4b5b, inset -2px -2px 5px #f0f5fa;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>📘 FWU Practicals</h1>
-    <p style="text-align:center;">Simple, quick access to PDFs. View or download below. Thank you for your time and consideration.</p>
+    <header class="site-header">
+        <div class="header-left">
+            📘
+            <a href="#" id="scrollToTop" class="site-title">FWU Practicals</a>
+        </div>
+        <div class="header-right">
+            <span class="nav-item">About</span>
+            <span class="nav-item" id="scrollToContact">Contact</span>
+        </div>
+    </header>
+
+
+    <p class="intro-text">Simple, quick access to PDFs. View or download below. Thank you for your time and consideration.</p>
 
     <ul class="pdf-list">
         <h2>SEM III</h2>
-        <li class="pdf-item">
-            <h3>Electrical Practicals</h3>
-            <p>Date: 2082-03-22/23</p>
-            <div class="buttons">
-                <a href="pdfs\practicals_electrical.pdf" target="_blank">🔍 View</a>
-                <a href="pdfs\practicals_electrical.pdf" download>⬇️ Download</a>
+
+        <li class="pdf-item left-align">
+            <div class="card-body">
+                <div class="left-side">
+                    <h2>Electrical Practicals</h2>
+                    <p>Date: 2082-03-22/23</p>
+                    <div class="buttons">
+                        <a href="pdfs/practicals_electrical.pdf" target="_blank">🔍 View</a>
+                        <a href="pdfs/practicals_electrical.pdf" download>⬇️ Download</a>
+                    </div>
+                </div>
+                <img src="Image/electric.png" class="section-logo" alt="Electrical logo">
             </div>
         </li>
-        <li class="pdf-item">
-            <h3>Fluid Practicals</h3>
-            <p>Date: 2082-03-22/23</p>
-            <div class="button">
-                <a href="pdfs\fluidIIIpract.pdf" target="_blank">🔍 View</a>
-                <a href="pdfs\fluidIIIpract.pdf" download>⬇️ Download</a>
+
+        <li class="pdf-item right-align">
+            <div class="card-body">
+                <img src="Image/fluid.png" class="section-logo" alt="Fluid logo">
+                <div class="right-side">
+                    <h2>Fluid Practicals</h2>
+                    <p>Date: 2082-03-22/23</p>
+                    <div class="buttons">
+                        <a href="pdfs/fluidIIIpract.pdf" target="_blank">🔍 View</a>
+                        <a href="pdfs/fluidIIIpract.pdf" download>⬇️ Download</a>
+                    </div>
+                </div>
             </div>
         </li>
-        <li class="pdf-item">
-            <h3>SOM Practicals</h3>
-            <p>Date: 2082-03-22/23</p>
-            <div class="buttons">
-                <a href="pdfs\SOMIIIpract.pdf" target="_blank">🔍 View</a>
-                <a href="pdfs\SOMIIIpract.pdf" download>⬇️ Download</a>
+
+        <li class="pdf-item left-align">
+            <div class="card-body">
+                <div class="left-side">
+                    <h2>SOM Practicals</h2>
+                    <p>Date: 2082-03-22/23</p>
+                    <div class="buttons">
+                        <a href="pdfs/SOMIIIpract.pdf" target="_blank">🔍 View</a>
+                        <a href="pdfs/SOMIIIpract.pdf" download>⬇️ Download</a>
+                    </div>
+                </div>
+                <img src="Image/strength.png" class="section-logo" alt="Strength of Materials logo">
             </div>
         </li>
-        <li class="pdf-item">
-            <h3>Mechanical Eng Practicals</h3>
-            <p>Date: 2082-03-22/23</p>
-            <div class="button">
-                <a href="pdfs\MechanicalIIIpract.pdf" target="_blank">🔍 View</a>
-                <a href="pdfs\MechanicalIIIpract.pdf" download>⬇️ Download</a>
+
+        <li class="pdf-item right-align">
+            <div class="card-body">
+                <img src="Image/mech.png" class="section-logo" alt="Mechanical logo">
+                <div class="right-side">
+                    <h2>Mechanical Eng Practicals</h2>
+                    <p>Date: 2082-03-22/23</p>
+                    <div class="buttons">
+                        <a href="pdfs/MechanicalIIIpract.pdf" target="_blank">🔍 View</a>
+                        <a href="pdfs/MechanicalIIIpract.pdf" download>⬇️ Download</a>
+                    </div>
+                </div>
             </div>
         </li>
-        <!-- Add more as needed -->
+
     </ul>
+
+    <footer id="contact-section" class="site-footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/kaishenberg007" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="Image/fb.png" alt="Facebook Icon" class="social-icon">
+            </a>
+            <a href="https://wa.me/9868713016" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <img src="Image/whasap.png" alt="WhatsApp Icon" class="social-icon">
+            </a>
+        </div>
+
+        <p class="footer-line disclaimer">
+            🛡️ Disclaimer: This site is independently created by FWU students for educational purposes. Content may not reflect official curriculum. Contact us in our social media to clear your doubts.<br> “Muchas gracias!!”
+        </p>
+        <p class="footer-line copyright">
+            &copy; 2082 Kaishenberg_007. Crafted with ❤️
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('scrollToTop').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToContact').addEventListener('click', function() {
+            document.getElementById('contact-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
